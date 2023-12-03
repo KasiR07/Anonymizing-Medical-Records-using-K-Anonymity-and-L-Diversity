@@ -38,3 +38,12 @@ The resulting dataset was analysed using the previously defined utility measures
 • Discernibility Metric (DM) of the dataset before and after anonymization is measures. Before anonymization it was 2,137,444 and after anonymization it is 98,510. Thus we can see a twenty-fold or 20× decrease in value; i.e., more equivalent classes now have their size under k.
 
 • Average Equivalence Class Size Metric before anonymization had a value of 0.022 and after anonymization, the value is 1.413. Although the ideal value is 1, 1.413 is closer to 1 than 0.120. Hence, we can observe a significant improvement. The results of the anonymization algorithm described previously have been examined on an exemplar set of facial images — the UTK-Face* dataset, available for open access.
+
+![image](https://github.com/KasiR07/Anonymizing-Medical-Records-using-K-Anonymity-and-L-Diversity/assets/108777263/a5e090ea-529d-4957-b6c2-8bd1b1e9d7d5)
+![image](https://github.com/KasiR07/Anonymizing-Medical-Records-using-K-Anonymity-and-L-Diversity/assets/108777263/dccbd699-6a66-4d8b-81a7-80a70866ed1f)
+
+It is to be noted, however, that the utility of the image is preserved. Faces have been taken as exemplar samples in this example, but the principle may be extended to any other graphic content of electronic health records — including, but not limited to, tomographic scans, resonance imaging, other radiological images of skeletal structures, lungs, and other parts of the body. Further, the results for the anonymization of the tabular data present in the DICOM images is shown below.
+
+![image](https://github.com/KasiR07/Anonymizing-Medical-Records-using-K-Anonymity-and-L-Diversity/assets/108777263/a62ae57c-6b04-4a77-af97-5d527e044899)
+
+
