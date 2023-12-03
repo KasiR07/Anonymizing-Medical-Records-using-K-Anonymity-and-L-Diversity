@@ -18,7 +18,23 @@ Notably, the novelty of our improved algorithm lies in its adaptability to the c
 
 # Results 
 The dataset used to depict the computations of the anonymization process is a modified version of the PHI information embedded in the DICOM images of the open-acces Stanford CheXNet database (source). This dataset contains 15,060 rows, each having attributes like Patient ID, Age, SSN, Marital status, Gender, Ethnicity, Race, address, and so on. Of course, primary identifiers like Patient ID and SSN have been redacted in the publicly available version; these are not of importance, since only quasi-identifiers are being dealt with by our algorithm. After making sure that the dataset is parsed properly, we collect the attribute classification information, which tells the tool which all attributes are direct, quasi, sensitive and insensitive.
+
 ![image](https://github.com/KasiR07/Anonymizing-Medical-Records-using-K-Anonymity-and-L-Diversity/assets/108777263/8d716a9b-2e29-475c-ab7f-17a8e357b92b)
 
 The dataset has 3052 unique combinations of quasi-identifier values and the y-axis represents how many records are there in each of these equivalent classes. For a very common set of quasiidentifier sets (like., “(20, <address>, ‘Never-married’, ‘Female’)”) one can see that there are a lot of records in that specific equivalent class. The first step in the anonymization process is the suppression of direct-identifiers.
+
 ![image](https://github.com/KasiR07/Anonymizing-Medical-Records-using-K-Anonymity-and-L-Diversity/assets/108777263/6cc82aea-e2aa-4095-9c47-692b5f7f0aaa)
+
+The next steps contain the Mondrian algorithm trying to partition the entire dataset into equivalent classes (size ≥ k) each satisfying the l-diversity and t-closeness parameters. Once the required partitions are obtained, we proceed to the generalization process where the quasiidentifying attributes in each of these equivalent classes are generalized to make it satisfy kanonymity.
+
+![image](https://github.com/KasiR07/Anonymizing-Medical-Records-using-K-Anonymity-and-L-Diversity/assets/108777263/15bd6aa8-bc22-49af-9523-af0b2921a82d)
+
+![image](https://github.com/KasiR07/Anonymizing-Medical-Records-using-K-Anonymity-and-L-Diversity/assets/108777263/9ebdee89-20e9-43a8-9428-953f525cd5ba)
+
+The resulting dataset was analysed using the previously defined utility measures. The output of our prototype is shown below. The following changes in metrics were observed.
+
+• Generalization Information Loss (GenILoss) is usually within the range 0 (no transformation) to 1 (full suppression). The anonymized dataset is having the value 0.33. Thus, the dataset is generalized as required without much loss in information.
+
+• Discernibility Metric (DM) of the dataset before and after anonymization is measures. Before anonymization it was 2,137,444 and after anonymization it is 98,510. Thus we can see a twenty-fold or 20× decrease in value; i.e., more equivalent classes now have their size under k.
+
+• Average Equivalence Class Size Metric before anonymization had a value of 0.022 and after anonymization, the value is 1.413. Although the ideal value is 1, 1.413 is closer to 1 than 0.120. Hence, we can observe a significant improvement. The results of the anonymization algorithm described previously have been examined on an exemplar set of facial images — the UTK-Face* dataset, available for open access.
