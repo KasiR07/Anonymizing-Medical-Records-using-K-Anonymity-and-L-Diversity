@@ -40,10 +40,17 @@ The resulting dataset was analysed using the previously defined utility measures
 • Average Equivalence Class Size Metric before anonymization had a value of 0.022 and after anonymization, the value is 1.413. Although the ideal value is 1, 1.413 is closer to 1 than 0.120. Hence, we can observe a significant improvement. The results of the anonymization algorithm described previously have been examined on an exemplar set of facial images — the UTK-Face* dataset, available for open access.
 
 ![image](https://github.com/KasiR07/Anonymizing-Medical-Records-using-K-Anonymity-and-L-Diversity/assets/108777263/a5e090ea-529d-4957-b6c2-8bd1b1e9d7d5)
-![image](https://github.com/KasiR07/Anonymizing-Medical-Records-using-K-Anonymity-and-L-Diversity/assets/108777263/dccbd699-6a66-4d8b-81a7-80a70866ed1f)
+![image](https://github.com/KasiR07/Anonymizing-Medical-Records-using-K-Anonymity-and-L-Diversity/assets/108777263/90fd3ecf-cfc6-4f30-8928-3fcbceb07597)
+
 
 It is to be noted, however, that the utility of the image is preserved. Faces have been taken as exemplar samples in this example, but the principle may be extended to any other graphic content of electronic health records — including, but not limited to, tomographic scans, resonance imaging, other radiological images of skeletal structures, lungs, and other parts of the body. Further, the results for the anonymization of the tabular data present in the DICOM images is shown below.
 
 ![image](https://github.com/KasiR07/Anonymizing-Medical-Records-using-K-Anonymity-and-L-Diversity/assets/108777263/a62ae57c-6b04-4a77-af97-5d527e044899)
 
+# Conclusion
+This project presents a comprehensive architecture that effectively addresses the pressing concerns surrounding data privacy while retaining the data's analytical utility. The architecture encompasses key stages, from data collection and preprocessing to advanced de-identification techniques for both facial images and tabular data. It ensures that the resulting data is both privacy-compliant and secure, complete with stringent access controls and auditing mechanisms. Striking a balance between safeguarding individual privacy and facilitating meaningful data analysis, this architecture empowers organizations to extract valuable insights from their data without compromising personal privacy.
 
+Looking ahead, its future scope includes the integration of advanced privacy techniques, real-time monitoring, machine learning applications, and adaptability to evolving global data privacy regulations. It is expected to continue evolving to handle large volumes of data while offering user-friendly interfaces and tailored solutions for specific industries, cementing its relevance in a world where data privacy and analytics are of paramount importance.
+
+# Future Scope
+The scope of this paper merely covers utility preservation from a statistical perspective. Future works could improve the visual fidelity of anonymized images specifically for AI-based diagnostic tools, ensuring that these tools can extract maximum value from the data without compromising privacy. Additionally, this algorithm may also not work well in real-time applications like telemedicine and emergency care; further exploration can be done in reducing the latency of anonymization.
