@@ -54,3 +54,8 @@ Looking ahead, its future scope includes the integration of advanced privacy tec
 
 # Future Scope
 The scope of this paper merely covers utility preservation from a statistical perspective. Future works could improve the visual fidelity of anonymized images specifically for AI-based diagnostic tools, ensuring that these tools can extract maximum value from the data without compromising privacy. Additionally, this algorithm may also not work well in real-time applications like telemedicine and emergency care; further exploration can be done in reducing the latency of anonymization.
+
+# Contributors
+
+![image](https://github.com/KasiR07/Anonymizing-Medical-Records-using-K-Anonymity-and-L-Diversity/assets/108777263/429ac004-f519-4a3a-901e-8843a1fde2f7)
+
