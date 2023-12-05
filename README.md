@@ -59,3 +59,8 @@ The scope of this paper merely covers utility preservation from a statistical pe
 
 ![image](https://github.com/KasiR07/Anonymizing-Medical-Records-using-K-Anonymity-and-L-Diversity/assets/108777263/429ac004-f519-4a3a-901e-8843a1fde2f7)
 
+# Poster
+
+![image](https://github.com/KasiR07/Anonymizing-Medical-Records-using-K-Anonymity-and-L-Diversity/assets/108777263/a65a23b2-0830-42c5-92a8-48ab076f5bc6)
+
+
